@@ -11,7 +11,7 @@ public class Movimiento : MonoBehaviour
     // Update is called once per frame
     float x;
     float y;
-    public int speed;
+    public int speed = 1;
     void Update()
     {
         float x = Input.GetAxis("Horizontal");

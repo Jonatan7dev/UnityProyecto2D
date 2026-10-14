@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,6 +18,14 @@ public class Movimiento : MonoBehaviour
     private float siguienteDanoLava;
     private bool muerto;
 
+    private float direccionX = 1f;
+    private SpriteRenderer sr;
+
+    private void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
+
     private void Update()
     {
         if (muerto) return;
@@ -37,9 +44,24 @@ public class Movimiento : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
 
-        Vector3 direccion = new Vector3(x, y, 0).normalized;
+        Direccion(x);
 
+        Vector3 direccion = new Vector3(x, y, 0).normalized;
         transform.Translate(direccion * speed * Time.deltaTime);
+    }
+
+    private void Direccion(float x)
+    {
+        if (x < 0)
+        {
+            direccionX = -1f;
+            sr.flipX = true;
+        }
+        else if (x > 0)
+        {
+            direccionX = 1f;
+            sr.flipX = false;
+        }
     }
 
     private void Disparar()
@@ -52,9 +74,19 @@ public class Movimiento : MonoBehaviour
             return;
         }
 
-        Vector3 posicionBala = transform.position + Vector3.right * distanciaDisparo;
+        Vector3 posicionBala =
+            transform.position + Vector3.right * (distanciaDisparo * direccionX);
 
-        Instantiate(balaPrefab, posicionBala, Quaternion.identity);
+        GameObject nuevaBala = Instantiate(
+            balaPrefab, posicionBala, Quaternion.identity
+        );
+
+        Bala bala = nuevaBala.GetComponent<Bala>();
+
+        if (bala != null)
+        {
+            bala.EstablecerDireccion(direccionX);
+        }
     }
 
     public void Vida(int dano)

@@ -1,18 +1,24 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Movimiento : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-
     public int hp = 100;
     public int DmgPincho = 1;
     public int DmgLava = 1;
     float x;
     float y;
     public int speed = 1;
+
+    public GameObject balaPrefab;
+    GameObject balaCopia;
+
+
+    void Start()
+    {
+    }
+
+
 
     void Update()
     {
@@ -22,10 +28,14 @@ public class Movimiento : MonoBehaviour
         transform.Translate(new Vector3(x, y, 0) * speed * Time.deltaTime);
 
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Vida(DmgPincho);
+            balaCopia = Instantiate(balaPrefab, transform.position + new Vector3(1, 0, 0), Quaternion.identity);
+            
         }
+        balaCopia.transform.Translate(new Vector3(1, 0, 0) * speed * Time.deltaTime);
+
+       
     }
 
     public void Vida(int dmg)
@@ -35,15 +45,22 @@ public class Movimiento : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.transform.tag == "Pincho")
+        switch (collision.transform.tag)
         {
-            Vida(DmgPincho);
+            case "Bandera":
+                SceneManager.LoadScene("Scene_one");
+                break;
+
+            case "Pincho":
+                Vida(DmgPincho);
+                break;
+
         }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if(collision.transform.tag == "Lava")
+        if (collision.transform.tag == "Lava")
         {
             Vida(DmgLava);
         }
@@ -51,10 +68,11 @@ public class Movimiento : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Bandera")
+        if (collision.tag == "Bandera")
         {
             print("WIN");
             Destroy(collision.gameObject);
         }
     }
 }
+

@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 36315491}
   m_Layer: 0
   m_Name: Final
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -412,7 +412,7 @@ GameObject:
   - component: {fileID: 151394311}
   m_Layer: 0
   m_Name: Pilares2
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -713,6 +713,8 @@ MonoBehaviour:
   DmgPincho: 10
   DmgLava: 2
   speed: 7
+  balaPrefab: {fileID: 2825401881549197922, guid: a25c05a5eaba76045b839aaf14f07ef4, type: 3}
+  distanciaDisparo: 1
 --- !u!50 &372912580
 Rigidbody2D:
   serializedVersion: 5
@@ -790,7 +792,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7500690451134026123, guid: d58a7c901ea677743866d81f3a06713e, type: 3}
-  m_Color: {r: 0, g: 0.19064093, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1190,7 +1192,7 @@ GameObject:
   - component: {fileID: 1517556508}
   m_Layer: 0
   m_Name: Pilares3
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1328,7 +1330,7 @@ GameObject:
   - component: {fileID: 1520825323}
   m_Layer: 0
   m_Name: Pilares1
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1608,7 +1610,7 @@ GameObject:
   - component: {fileID: 1646672583}
   m_Layer: 0
   m_Name: Pilares5
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1990,7 +1992,7 @@ GameObject:
   - component: {fileID: 2002428882}
   m_Layer: 0
   m_Name: Pilares4
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

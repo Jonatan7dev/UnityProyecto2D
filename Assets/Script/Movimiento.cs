@@ -1,77 +1,109 @@
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Movimiento : MonoBehaviour
 {
+    [Header("Vida")]
     public int hp = 100;
     public int DmgPincho = 1;
     public int DmgLava = 1;
-    float x;
-    float y;
-    public int speed = 1;
 
+    [Header("Movimiento")]
+    public float speed = 5f;
+
+    [Header("Disparo")]
     public GameObject balaPrefab;
-    GameObject balaCopia;
+    public float distanciaDisparo = 1f;
 
+    private float siguienteDanoLava;
+    private bool muerto;
 
-    void Start()
+    private void Update()
     {
-    }
+        if (muerto) return;
 
+        Mover();
+        Disparar();
 
-
-    void Update()
-    {
-        float x = Input.GetAxis("Horizontal");
-        float y = Input.GetAxis("Vertical");
-
-        transform.Translate(new Vector3(x, y, 0) * speed * Time.deltaTime);
-
-
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (hp <= 0)
         {
-            balaCopia = Instantiate(balaPrefab, transform.position + new Vector3(1, 0, 0), Quaternion.identity);
-            
+            Morir();
         }
-        balaCopia.transform.Translate(new Vector3(1, 0, 0) * speed * Time.deltaTime);
-
-       
     }
 
-    public void Vida(int dmg)
+    private void Mover()
     {
-        hp -= dmg;
+        float x = Input.GetAxisRaw("Horizontal");
+        float y = Input.GetAxisRaw("Vertical");
+
+        Vector3 direccion = new Vector3(x, y, 0).normalized;
+
+        transform.Translate(direccion * speed * Time.deltaTime);
+    }
+
+    private void Disparar()
+    {
+        if (!Input.GetMouseButtonDown(0)) return;
+
+        if (balaPrefab == null)
+        {
+            Debug.LogWarning("No has asignado el prefab de la bala.");
+            return;
+        }
+
+        Vector3 posicionBala = transform.position + Vector3.right * distanciaDisparo;
+
+        Instantiate(balaPrefab, posicionBala, Quaternion.identity);
+    }
+
+    public void Vida(int dano)
+    {
+        if (muerto) return;
+
+        hp = Mathf.Max(0, hp - dano);
+        Debug.Log("Vida restante: " + hp);
+
+        if (hp <= 0)
+        {
+            Morir();
+        }
+    }
+
+    private void Morir()
+    {
+        if (muerto) return;
+
+        muerto = true;
+        Debug.Log("El personaje ha muerto.");
+        enabled = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        switch (collision.transform.tag)
+        if (collision.gameObject.CompareTag("Pincho"))
         {
-            case "Bandera":
-                SceneManager.LoadScene("Scene_one");
-                break;
-
-            case "Pincho":
-                Vida(DmgPincho);
-                break;
-
+            Vida(DmgPincho);
         }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.transform.tag == "Lava")
+        if (collision.gameObject.CompareTag("Lava"))
         {
-            Vida(DmgLava);
+            if (Time.time >= siguienteDanoLava)
+            {
+                Vida(DmgLava);
+                siguienteDanoLava = Time.time + 1f;
+            }
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.tag == "Bandera")
+        if (other.CompareTag("Bandera"))
         {
-            print("WIN");
-            Destroy(collision.gameObject);
+            SceneManager.LoadScene("Scene_one");
         }
     }
 }

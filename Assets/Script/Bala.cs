@@ -8,6 +8,8 @@ public class Bala : MonoBehaviour
 
     private float direccionX = 1f;
 
+    public int dmgBala = 5;
+
     public void EstablecerDireccion(float x)
     {
         direccionX = x;
@@ -21,10 +23,16 @@ public class Bala : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Block"))
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            collision.gameObject.GetComponent<BlocksController>().TakeHp(dmgBala);
+            Destroy(gameObject);
+        }
+        else
         {
             Destroy(gameObject);
         }
+
     }
 }
 

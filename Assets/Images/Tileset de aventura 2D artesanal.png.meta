@@ -152,7 +152,7 @@ TextureImporter:
         width: 104
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -161,6 +161,50 @@ TextureImporter:
       bones: []
       spriteID: 3be26d68546bf56458a34ef344a8733f
       internalID: -497043801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset de aventura 2D artesanal_3
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 988
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c521e95fc346a43ab1d8fa86076ad9
+      internalID: 90560763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset de aventura 2D artesanal_4
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1106
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e14a47e67ce294e8d43c1af3341f6b
+      internalID: -1524214169
       vertices: []
       indices: 
       edges: []
@@ -182,6 +226,8 @@ TextureImporter:
       Tileset de aventura 2D artesanal_0: -2936930069546200270
       Tileset de aventura 2D artesanal_1: 1862515721
       Tileset de aventura 2D artesanal_2: -497043801
+      Tileset de aventura 2D artesanal_3: 90560763
+      Tileset de aventura 2D artesanal_4: -1524214169
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

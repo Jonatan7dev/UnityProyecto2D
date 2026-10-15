@@ -15,15 +15,26 @@ public class Movimiento : MonoBehaviour
     public GameObject balaPrefab;
     public float distanciaDisparo = 1f;
 
+    [Header("Salto")]
+    public float fuerzaSalto = 4f;
+    private Rigidbody2D rb;
+    public Transform groundCheck;
+    public float groundRadius = 0.2f;
+    public LayerMask sueloLayer;
+    private bool enSuelo;
+
     private float siguienteDanoLava;
     private bool muerto;
 
     private float direccionX = 1f;
     private SpriteRenderer sr;
+    private Animator an;
 
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        an = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -31,6 +42,8 @@ public class Movimiento : MonoBehaviour
         if (muerto) return;
 
         Mover();
+        ComprobarSuelo();
+        Saltar();
         Disparar();
 
         if (hp <= 0)
@@ -42,12 +55,15 @@ public class Movimiento : MonoBehaviour
     private void Mover()
     {
         float x = Input.GetAxisRaw("Horizontal");
-        float y = Input.GetAxisRaw("Vertical");
+        //float y = Input.GetAxisRaw("Vertical");
 
         Direccion(x);
 
-        Vector3 direccion = new Vector3(x, y, 0).normalized;
+        Vector3 direccion = new Vector3(x, 0, 0).normalized;
         transform.Translate(direccion * speed * Time.deltaTime);
+
+        bool moviendo = x != 0;
+        an.SetBool("IsRunning", moviendo);
     }
 
     private void Direccion(float x)
@@ -87,6 +103,25 @@ public class Movimiento : MonoBehaviour
         {
             bala.EstablecerDireccion(direccionX);
         }
+    }
+
+    private void Saltar()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && enSuelo)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, fuerzaSalto);
+        }
+
+        an.SetBool("IsJumping", !enSuelo);
+    }
+
+    private void ComprobarSuelo()
+    {
+        enSuelo = Physics2D.OverlapCircle(
+            groundCheck.position,
+            groundRadius,
+            sueloLayer
+        );
     }
 
     public void Vida(int dano)
@@ -138,5 +173,14 @@ public class Movimiento : MonoBehaviour
             SceneManager.LoadScene("Scene_one");
         }
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck == null) return;
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(groundCheck.position, groundRadius);
+    }
+
 }
 

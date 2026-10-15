@@ -8,6 +8,8 @@ TagManager:
   - Lava
   - Bandera
   - Block
+  - Bala
+  - Enemy
   layers:
   - Default
   - TransparentFX

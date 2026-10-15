@@ -60,6 +60,15 @@ public class BlocksController : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<Movimiento>().Vida(20);
+        }
+    }
+
     private void OnDrawGizmos()
     {
         if (sensorDerecha != null)

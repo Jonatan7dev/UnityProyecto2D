@@ -7,15 +7,23 @@ public class BlocksController : MonoBehaviour
 
     private float dirX = 1f;
 
+    private SpriteRenderer sr;
+
     [Header("Sensores")]
     public Transform sensorIzquierda;
     public Transform sensorDerecha;
     public float radioSensor = 0.1f;
     public LayerMask paredLayer;
 
+
+    private void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
     void Update()
     {
         ComprobarPared();
+        CambiarDir(dirX);
 
         transform.Translate(Vector2.right * dirX * speed * Time.deltaTime);
 
@@ -44,6 +52,17 @@ public class BlocksController : MonoBehaviour
         if (tocaIzquierda)
         {
             dirX = 1;
+        }
+    }
+
+    public void CambiarDir(float dirX)
+    {
+        if(dirX < 0)
+        {
+            sr.flipX = true;
+        } else if(dirX > 0)
+        {
+            sr.flipX = false;
         }
     }
 

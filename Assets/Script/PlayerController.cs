@@ -15,20 +15,26 @@ public class Movimiento : MonoBehaviour
     public GameObject balaPrefab;
     public float distanciaDisparo = 1f;
 
+    [Header("DisparoRayo")]
+    public float disRayo = 10f;
+    public LayerMask layersActive;
+
     [Header("Salto")]
     public float fuerzaSalto = 4f;
-    private Rigidbody2D rb;
     public Transform groundCheck;
     public float groundRadius = 0.2f;
     public LayerMask sueloLayer;
-    private bool enSuelo;
 
-    private float siguienteDanoLava;
+    //Variables privados
+    private Rigidbody2D rb;
+    private SpriteRenderer sr;
+    private Animator an;
+
+    private bool enSuelo;
     private bool muerto;
 
     private float direccionX = 1f;
-    private SpriteRenderer sr;
-    private Animator an;
+    private float siguienteDanoLava;
 
     private void Start()
     {
@@ -46,24 +52,24 @@ public class Movimiento : MonoBehaviour
         Saltar();
         Disparar();
 
+        if (Input.GetMouseButtonDown(0))
+        {
+            DisparoRayo();
+        }
+
         if (hp <= 0)
         {
             Morir();
         }
     }
 
-    private void Mover()
+    private void ComprobarSuelo()
     {
-        float x = Input.GetAxisRaw("Horizontal");
-        //float y = Input.GetAxisRaw("Vertical");
-
-        Direccion(x);
-
-        Vector3 direccion = new Vector3(x, 0, 0).normalized;
-        transform.Translate(direccion * speed * Time.deltaTime);
-
-        bool moviendo = x != 0;
-        an.SetBool("IsRunning", moviendo);
+        enSuelo = Physics2D.OverlapCircle(
+            groundCheck.position,
+            groundRadius,
+            sueloLayer
+        );
     }
 
     private void Direccion(float x)
@@ -82,7 +88,7 @@ public class Movimiento : MonoBehaviour
 
     private void Disparar()
     {
-        if (!Input.GetMouseButtonDown(0)) return;
+        if (!Input.GetMouseButtonDown(1)) return;
 
         if (balaPrefab == null)
         {
@@ -93,9 +99,8 @@ public class Movimiento : MonoBehaviour
         Vector3 posicionBala =
             transform.position + Vector3.right * (distanciaDisparo * direccionX);
 
-        GameObject nuevaBala = Instantiate(
-            balaPrefab, posicionBala, Quaternion.identity
-        );
+        GameObject nuevaBala =
+            Instantiate(balaPrefab, posicionBala, Quaternion.identity);
 
         Bala bala = nuevaBala.GetComponent<Bala>();
 
@@ -105,36 +110,33 @@ public class Movimiento : MonoBehaviour
         }
     }
 
-    private void Saltar()
+    public void DisparoRayo()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && enSuelo)
+        Vector2 direccion = new Vector2(direccionX, 0);
+
+        RaycastHit2D hit2D =
+            Physics2D.Raycast(transform.position, direccion, disRayo, layersActive);
+
+        if (hit2D.collider != null)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, fuerzaSalto);
+            Debug.Log("Golpeado: " + hit2D.collider.name);
+
+            if (hit2D.collider.CompareTag("Block"))
+            {
+                Debug.Log("Es un Block: " + hit2D.transform.name);
+            }
+        }
+        else
+        {
+            Debug.Log("No golpeó nada");
         }
 
-        an.SetBool("IsJumping", !enSuelo);
-    }
-
-    private void ComprobarSuelo()
-    {
-        enSuelo = Physics2D.OverlapCircle(
-            groundCheck.position,
-            groundRadius,
-            sueloLayer
+        Debug.DrawRay(
+            transform.position,
+            direccion * disRayo,
+            Color.green,
+            1f
         );
-    }
-
-    public void Vida(int dano)
-    {
-        if (muerto) return;
-
-        hp = Mathf.Max(0, hp - dano);
-        Debug.Log("Vida restante: " + hp);
-
-        if (hp <= 0)
-        {
-            Morir();
-        }
     }
 
     private void Morir()
@@ -142,8 +144,50 @@ public class Movimiento : MonoBehaviour
         if (muerto) return;
 
         muerto = true;
+
         Debug.Log("El personaje ha muerto.");
+
         enabled = false;
+    }
+
+    private void Mover()
+    {
+        float x = Input.GetAxisRaw("Horizontal");
+
+        Direccion(x);
+
+        Vector3 direccion = new Vector3(x, 0, 0).normalized;
+
+        transform.Translate(direccion * speed * Time.deltaTime);
+
+        bool moviendo = x != 0;
+
+        an.SetBool("IsRunning", moviendo);
+    }
+
+    private void Saltar()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && enSuelo)
+        {
+            rb.linearVelocity =
+                new Vector2(rb.linearVelocity.x, fuerzaSalto);
+        }
+
+        an.SetBool("IsJumping", !enSuelo);
+    }
+
+    public void Vida(int dano)
+    {
+        if (muerto) return;
+
+        hp = Mathf.Max(0, hp - dano);
+
+        Debug.Log("Vida restante: " + hp);
+
+        if (hp <= 0)
+        {
+            Morir();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -179,8 +223,10 @@ public class Movimiento : MonoBehaviour
         if (groundCheck == null) return;
 
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(groundCheck.position, groundRadius);
+
+        Gizmos.DrawWireSphere(
+            groundCheck.position,
+            groundRadius
+        );
     }
-
 }
-

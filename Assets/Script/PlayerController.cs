@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Movimiento : MonoBehaviour
 {
@@ -36,11 +37,19 @@ public class Movimiento : MonoBehaviour
     private float direccionX = 1f;
     private float siguienteDanoLava;
 
+    //Variables para la UI
+    [Header("UI")]
+    public Text texto;
+    
+
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
         an = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+
+       
+        
     }
 
     private void Update()
@@ -48,6 +57,7 @@ public class Movimiento : MonoBehaviour
         if (muerto) return;
 
         Mover();
+        MostrarTexto();
         ComprobarSuelo();
         Saltar();
         Disparar();
@@ -61,6 +71,7 @@ public class Movimiento : MonoBehaviour
         {
             Morir();
         }
+        
     }
 
     private void ComprobarSuelo()
@@ -117,7 +128,9 @@ public class Movimiento : MonoBehaviour
         RaycastHit2D hit2D =
             Physics2D.Raycast(transform.position, direccion, disRayo, layersActive);
 
-        if (hit2D.collider != null)
+        bool attacking = hit2D.collider;
+        
+        if (attacking != null)
         {
             Debug.Log("Golpeado: " + hit2D.collider.name);
 
@@ -137,6 +150,13 @@ public class Movimiento : MonoBehaviour
             Color.green,
             1f
         );
+
+        an.SetBool("IsAttacking", attacking);
+    }
+
+    public void FuncionBoton(int id)
+    {
+        print("Botón por Script y su botón es " + id);
     }
 
     private void Morir()
@@ -148,6 +168,11 @@ public class Movimiento : MonoBehaviour
         Debug.Log("El personaje ha muerto.");
 
         enabled = false;
+    }
+
+    private void MostrarTexto()
+    {
+        texto.text = "HP: " + hp;
     }
 
     private void Mover()
@@ -188,6 +213,8 @@ public class Movimiento : MonoBehaviour
         {
             Morir();
         }
+
+        MostrarTexto();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

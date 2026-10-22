@@ -1,8 +1,10 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BlocksController : MonoBehaviour
 {
-    public int hp = 3;
+    public int hp = 30;
     public float speed = 4f;
 
     private float dirX = 1f;
@@ -15,10 +17,14 @@ public class BlocksController : MonoBehaviour
     public float radioSensor = 0.1f;
     public LayerMask paredLayer;
 
+    [Header("UI")]
+    public Text texto;
+
 
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        MostrarTexto();
     }
     void Update()
     {
@@ -66,9 +72,15 @@ public class BlocksController : MonoBehaviour
         }
     }
 
+    public void MostrarTexto()
+    {
+        texto.text = "Hp: " + hp;
+    }
+
     public void TakeHp(int dmg)
     {
         hp -= dmg;
+        MostrarTexto();
     }
 
     void DestroyBlock()

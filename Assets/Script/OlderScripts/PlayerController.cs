@@ -64,7 +64,7 @@ public class Movimiento : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            DisparoRayo();
+            AtacarConEspada();
         }
 
         if (hp <= 0)
@@ -121,22 +121,33 @@ public class Movimiento : MonoBehaviour
         }
     }
 
-    public void DisparoRayo()
+    public void AtacarConEspada()
     {
+        // Activar la animación de ataque
+        an.SetTrigger("IsAttacking");
+
+        // Dirección del ataque
         Vector2 direccion = new Vector2(direccionX, 0);
 
-        RaycastHit2D hit2D =
-            Physics2D.Raycast(transform.position, direccion, disRayo, layersActive);
+        // Detectar objetos
+        RaycastHit2D hit2D = Physics2D.Raycast(
+            transform.position,
+            direccion,
+            disRayo,
+            layersActive
+        );
 
-        bool attacking = hit2D.collider;
-        
-        if (attacking != null)
+        if (hit2D.collider != null)
         {
             Debug.Log("Golpeado: " + hit2D.collider.name);
 
             if (hit2D.collider.CompareTag("Block"))
             {
                 Debug.Log("Es un Block: " + hit2D.transform.name);
+            }
+            else
+            {
+                hit2D.collider.gameObject.GetComponent<BlocksController>().TakeHp(10);
             }
         }
         else
@@ -150,8 +161,6 @@ public class Movimiento : MonoBehaviour
             Color.green,
             1f
         );
-
-        an.SetBool("IsAttacking", attacking);
     }
 
     public void FuncionBoton(int id)

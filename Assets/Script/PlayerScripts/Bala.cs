@@ -25,7 +25,7 @@ public class Bala : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            collision.gameObject.GetComponent<BlocksController>().TakeHp(dmgBala);
+            collision.gameObject.GetComponent<EnemyState>().TakeHp(dmgBala);
             Destroy(gameObject);
         }
         else

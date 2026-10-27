@@ -444,9 +444,11 @@ GameObject:
   - component: {fileID: 372912583}
   - component: {fileID: 372912582}
   - component: {fileID: 372912580}
-  - component: {fileID: 372912579}
   - component: {fileID: 372912584}
   - component: {fileID: 372912585}
+  - component: {fileID: 372912588}
+  - component: {fileID: 372912587}
+  - component: {fileID: 372912589}
   m_Layer: 3
   m_Name: Knight
   m_TagString: Player
@@ -454,35 +456,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &372912579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372912578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64591ef7c4f81a448abaa6bf03b1f3c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Movimiento
-  hp: 100
-  DmgPincho: 10
-  DmgLava: 2
-  speed: 5
-  balaPrefab: {fileID: 2825401881549197922, guid: a25c05a5eaba76045b839aaf14f07ef4, type: 3}
-  distanciaDisparo: 1
-  disRayo: 10
-  layersActive:
-    serializedVersion: 2
-    m_Bits: 128
-  fuerzaSalto: 7
-  groundCheck: {fileID: 521607569}
-  groundRadius: 0.2
-  sueloLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  texto: {fileID: 1502360452}
 --- !u!50 &372912580
 Rigidbody2D:
   serializedVersion: 5
@@ -669,6 +642,59 @@ PolygonCollider2D:
       - {x: 0.08382018, y: -0.13231981}
       - {x: 0.12216028, y: -0.13231981}
   m_UseDelaunayMesh: 1
+--- !u!114 &372912587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372912578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 615bbf017892e7a4aa1924c4f346a1ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  speed: 7
+  fuerzaSalto: 7
+  groundCheck: {fileID: 521607569}
+  groundRadius: 0.2
+  sueloLayer:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &372912588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372912578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13896f8b3bd43aa4f862bdbe4bf58a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerState
+  hp: 100
+  DmgPincho: 5
+  DmgLava: 5
+  texto: {fileID: 1502360452}
+--- !u!114 &372912589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372912578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780f41d1ac482ff4f8a9d9336688ee37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
+  balaPrefab: {fileID: 2825401881549197922, guid: a25c05a5eaba76045b839aaf14f07ef4, type: 3}
+  distanciaDisparo: 1
+  disRayo: 10
+  layersActive:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &424352743
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,10 +736,13 @@ GameObject:
   m_Component:
   - component: {fileID: 458053919}
   - component: {fileID: 458053918}
-  - component: {fileID: 458053916}
   - component: {fileID: 458053920}
   - component: {fileID: 458053921}
   - component: {fileID: 458053922}
+  - component: {fileID: 458053926}
+  - component: {fileID: 458053925}
+  - component: {fileID: 458053924}
+  - component: {fileID: 458053923}
   m_Layer: 7
   m_Name: Slime
   m_TagString: Enemy
@@ -721,27 +750,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &458053916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458053915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bbc41a4cf49a8645a373341112cac3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BlocksController
-  hp: 60
-  speed: 2
-  sensorIzquierda: {fileID: 1405442318}
-  sensorDerecha: {fileID: 1266955931}
-  radioSensor: 0.05
-  paredLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  texto: {fileID: 1265231951}
 --- !u!212 &458053918
 SpriteRenderer:
   serializedVersion: 2
@@ -927,6 +935,66 @@ PolygonCollider2D:
       - {x: 0.10714432, y: 0.028169358}
       - {x: 0.076635055, y: 0.09281008}
   m_UseDelaunayMesh: 1
+--- !u!114 &458053923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458053915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc2a9efe9fe40a4a9fcf45e81828d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyState
+  hp: 30
+  texto: {fileID: 1265231951}
+--- !u!114 &458053924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458053915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79fe7fdf58314f4e8008d90d2862ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
+  speed: 4
+  sensorIzquierda: {fileID: 1405442318}
+  sensorDerecha: {fileID: 1266955931}
+  radioSensor: 0.1
+  paredLayer:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &458053925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458053915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d25963d7ce71434799924f05c10d291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
+  danoContacto: 20
+--- !u!114 &458053926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458053915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc2a9efe9fe40a4a9fcf45e81828d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyState
+  hp: 60
+  texto: {fileID: 0}
 --- !u!1 &494116568
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,9 +1138,11 @@ GameObject:
   - component: {fileID: 528315488}
   - component: {fileID: 528315487}
   - component: {fileID: 528315486}
-  - component: {fileID: 528315485}
   - component: {fileID: 528315484}
   - component: {fileID: 528315483}
+  - component: {fileID: 528315491}
+  - component: {fileID: 528315490}
+  - component: {fileID: 528315489}
   m_Layer: 7
   m_Name: Bat
   m_TagString: Enemy
@@ -1170,27 +1240,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
---- !u!114 &528315485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 528315482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bbc41a4cf49a8645a373341112cac3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BlocksController
-  hp: 40
-  speed: 8
-  sensorIzquierda: {fileID: 424352744}
-  sensorDerecha: {fileID: 1704852545}
-  radioSensor: 0.05
-  paredLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  texto: {fileID: 332634027}
 --- !u!212 &528315486
 SpriteRenderer:
   serializedVersion: 2
@@ -1290,6 +1339,52 @@ Transform:
   - {fileID: 250176919}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &528315489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528315482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d25963d7ce71434799924f05c10d291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
+  danoContacto: 20
+--- !u!114 &528315490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528315482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79fe7fdf58314f4e8008d90d2862ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
+  speed: 8
+  sensorIzquierda: {fileID: 424352744}
+  sensorDerecha: {fileID: 1704852545}
+  radioSensor: 0.1
+  paredLayer:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &528315491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528315482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc2a9efe9fe40a4a9fcf45e81828d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyState
+  hp: 50
+  texto: {fileID: 332634027}
 --- !u!1 &677106001
 GameObject:
   m_ObjectHideFlags: 0
@@ -1622,9 +1717,11 @@ GameObject:
   - component: {fileID: 871992176}
   - component: {fileID: 871992172}
   - component: {fileID: 871992171}
-  - component: {fileID: 871992175}
   - component: {fileID: 871992173}
   - component: {fileID: 871992177}
+  - component: {fileID: 871992180}
+  - component: {fileID: 871992179}
+  - component: {fileID: 871992178}
   m_Layer: 7
   m_Name: Rat
   m_TagString: Enemy
@@ -1740,27 +1837,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &871992175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 871992170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bbc41a4cf49a8645a373341112cac3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BlocksController
-  hp: 30
-  speed: 4
-  sensorIzquierda: {fileID: 677106002}
-  sensorDerecha: {fileID: 324501344}
-  radioSensor: 0.05
-  paredLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  texto: {fileID: 1295079830}
 --- !u!4 &871992176
 Transform:
   m_ObjectHideFlags: 0
@@ -1837,6 +1913,52 @@ PolygonCollider2D:
       - {x: 0.22, y: 0.02}
       - {x: 0.22, y: 0.07}
   m_UseDelaunayMesh: 1
+--- !u!114 &871992178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871992170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79fe7fdf58314f4e8008d90d2862ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
+  speed: 4
+  sensorIzquierda: {fileID: 677106002}
+  sensorDerecha: {fileID: 324501344}
+  radioSensor: 0.1
+  paredLayer:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &871992179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871992170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d25963d7ce71434799924f05c10d291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
+  danoContacto: 20
+--- !u!114 &871992180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871992170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc2a9efe9fe40a4a9fcf45e81828d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyState
+  hp: 20
+  texto: {fileID: 1295079830}
 --- !u!1 &1005152061
 GameObject:
   m_ObjectHideFlags: 0

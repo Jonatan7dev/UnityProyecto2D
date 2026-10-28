@@ -1,9 +1,12 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator), typeof(SpriteRenderer))]
 [RequireComponent(typeof(PlayerState))]
 public class PlayerMovement : MonoBehaviour
 {
+    private float x;
+    
     [Header("Movimiento")]
     public float speed = 5f;
 
@@ -21,6 +24,10 @@ public class PlayerMovement : MonoBehaviour
     private PlayerState state;
     private bool enSuelo;
 
+    [Header("Animación")]
+    private EstadoPlayer estado;
+
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -36,11 +43,45 @@ public class PlayerMovement : MonoBehaviour
         Mover();
         ComprobarSuelo();
         Saltar();
+        Animacion(x);
+    }
+
+    private void Animacion(float x)
+    {
+        if(x != 0)
+        {
+            estado = EstadoPlayer.RUN;
+        }
+        else if (!enSuelo)
+        {
+            estado = EstadoPlayer.JUMP;
+        }
+        else
+        {
+            estado = EstadoPlayer.IDLE;
+        }
+
+        switch (estado)
+        {
+            case EstadoPlayer.RUN:
+                animator.Play("Run");
+                break;
+            case EstadoPlayer.JUMP:
+                animator.Play("Jump");
+                break;
+            case EstadoPlayer.IDLE:
+                animator.Play("Idle");
+                break;
+            default:
+                Debug.Log("La animación no funciona");
+                break;
+        }
+        
     }
 
     private void Mover()
     {
-        float x = Input.GetAxisRaw("Horizontal");
+        x = Input.GetAxisRaw("Horizontal");
         CambiarDireccion(x);
 
         // Mantiene el mismo movimiento que el script original.

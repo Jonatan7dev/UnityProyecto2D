@@ -1,11 +1,12 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator), typeof(SpriteRenderer))]
 [RequireComponent(typeof(PlayerState))]
 public class PlayerMovement : MonoBehaviour
 {
-    private float x;
+    public float x;
     
     [Header("Movimiento")]
     public float speed = 5f;
@@ -20,12 +21,14 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private SpriteRenderer sr;
-    private Animator animator;
+    public Animator animator;
     private PlayerState state;
-    private bool enSuelo;
+    public bool enSuelo;
 
     [Header("Animación")]
     private EstadoPlayer estado;
+    private PlayerAnimation anim;
+    private bool atacando;
 
 
     private void Awake()
@@ -34,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         state = GetComponent<PlayerState>();
+        anim = GetComponent<PlayerAnimation>();
     }
 
     private void Update()
@@ -43,18 +47,30 @@ public class PlayerMovement : MonoBehaviour
         Mover();
         ComprobarSuelo();
         Saltar();
-        Animacion(x);
-    }
 
+        if (Input.GetMouseButtonDown(0) && !atacando)
+        {
+            StartCoroutine(Atacar());
+        }
+
+        anim.ActualizarAnimacion(x, enSuelo, atacando);
+        Debug.Log(anim);
+        //Animacion(x);
+    }
+    
     private void Animacion(float x)
     {
-        if(x != 0)
+        if(!enSuelo)
+        {
+            estado = EstadoPlayer.JUMP;
+        }
+        else if (x!=0)
         {
             estado = EstadoPlayer.RUN;
         }
-        else if (!enSuelo)
+        else if (Input.GetMouseButtonDown(0))
         {
-            estado = EstadoPlayer.JUMP;
+            estado = EstadoPlayer.ATTACK;
         }
         else
         {
@@ -68,6 +84,9 @@ public class PlayerMovement : MonoBehaviour
                 break;
             case EstadoPlayer.JUMP:
                 animator.Play("Jump");
+                break;
+            case EstadoPlayer.ATTACK:
+                animator.Play("Attack");
                 break;
             case EstadoPlayer.IDLE:
                 animator.Play("Idle");
@@ -86,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Mantiene el mismo movimiento que el script original.
         transform.Translate(Vector3.right * x * speed * Time.deltaTime);
-        animator.SetBool("IsRunning", x != 0f);
+        //animator.SetBool("IsRunning", x != 0f);
     }
 
     private void CambiarDireccion(float x)
@@ -114,8 +133,19 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && enSuelo)
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, fuerzaSalto);
 
-        animator.SetBool("IsJumping", !enSuelo);
+        //animator.SetBool("IsJumping", !enSuelo);
     }
+
+
+    private IEnumerator Atacar()
+    {
+        atacando = true;
+
+        yield return new WaitForSeconds(0.5f);
+
+        atacando = false;
+    }
+
 
     private void OnDrawGizmosSelected()
     {

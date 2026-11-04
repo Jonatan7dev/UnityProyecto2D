@@ -15,6 +15,8 @@ public class PlayerAttack : MonoBehaviour
     private PlayerState state;
     private Animator animator;
 
+    private AudioController audio;
+
     private void Awake()
     {
         movement = GetComponent<PlayerMovement>();
@@ -32,6 +34,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Disparar()
     {
+        
         if (balaPrefab == null)
         {
             Debug.LogWarning("No has asignado el prefab de la bala.");
@@ -43,7 +46,9 @@ public class PlayerAttack : MonoBehaviour
 
         GameObject nuevaBala = Instantiate(balaPrefab, posicionBala, Quaternion.identity);
         Bala bala = nuevaBala.GetComponent<Bala>();
-        if (bala != null) bala.EstablecerDireccion(movement.DireccionX);
+        if (bala != null) bala.EstablecerDireccion(movement.DireccionX); 
+        
+        audio.AudioDisparo();
     }
 
     public void DisparoRayo()

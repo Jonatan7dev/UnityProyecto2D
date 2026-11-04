@@ -58,45 +58,6 @@ public class PlayerMovement : MonoBehaviour
         //Animacion(x);
     }
     
-    private void Animacion(float x)
-    {
-        if(!enSuelo)
-        {
-            estado = EstadoPlayer.JUMP;
-        }
-        else if (x!=0)
-        {
-            estado = EstadoPlayer.RUN;
-        }
-        else if (Input.GetMouseButtonDown(0))
-        {
-            estado = EstadoPlayer.ATTACK;
-        }
-        else
-        {
-            estado = EstadoPlayer.IDLE;
-        }
-
-        switch (estado)
-        {
-            case EstadoPlayer.RUN:
-                animator.Play("Run");
-                break;
-            case EstadoPlayer.JUMP:
-                animator.Play("Jump");
-                break;
-            case EstadoPlayer.ATTACK:
-                animator.Play("Attack");
-                break;
-            case EstadoPlayer.IDLE:
-                animator.Play("Idle");
-                break;
-            default:
-                Debug.Log("La animación no funciona");
-                break;
-        }
-        
-    }
 
     private void Mover()
     {

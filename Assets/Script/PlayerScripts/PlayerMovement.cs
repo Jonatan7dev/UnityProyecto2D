@@ -54,7 +54,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
         anim.ActualizarAnimacion(x, enSuelo, atacando);
-        Debug.Log(anim);
         //Animacion(x);
     }
     

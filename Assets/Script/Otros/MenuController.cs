@@ -4,15 +4,33 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-    public Button btn;
+    public Button playBtn;
+    public Button settingsBtn;
+    public Button exitBtn;
 
     private void Start()
     {
-        btn.onClick.AddListener(StartGame);
+        playBtn.onClick.AddListener(StartGame);
+        settingsBtn.onClick.AddListener(OpenSettings);
+        exitBtn.onClick.AddListener(ExitGame);
     }
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Scene_two");
+        SceneManager.LoadScene("Tutorial");
+    }
+
+    public void OpenSettings()
+    {
+        Debug.Log("Settings");
+    }
+
+    public void ExitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 }

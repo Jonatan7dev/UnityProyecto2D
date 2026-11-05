@@ -1,0 +1,2453 @@
+fileFormatVersion: 2
+guid: 6140c901053b76847962903fdd6d536d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4374745599427284455
+    second: Arbustos y flores pixelados para bosque medieval_0
+  - first:
+      213: -2966328840386534836
+    second: Arbustos y flores pixelados para bosque medieval_1
+  - first:
+      213: 6196429281935070715
+    second: Arbustos y flores pixelados para bosque medieval_2
+  - first:
+      213: -454913886616269637
+    second: Arbustos y flores pixelados para bosque medieval_3
+  - first:
+      213: 8874453894069230230
+    second: Arbustos y flores pixelados para bosque medieval_4
+  - first:
+      213: 6479508958320269350
+    second: Arbustos y flores pixelados para bosque medieval_5
+  - first:
+      213: 3262082529163499019
+    second: Arbustos y flores pixelados para bosque medieval_6
+  - first:
+      213: -3769649863748603560
+    second: Arbustos y flores pixelados para bosque medieval_7
+  - first:
+      213: 7200495640557626620
+    second: Arbustos y flores pixelados para bosque medieval_8
+  - first:
+      213: 2751477000085320301
+    second: Arbustos y flores pixelados para bosque medieval_9
+  - first:
+      213: 1337289183606670259
+    second: Arbustos y flores pixelados para bosque medieval_10
+  - first:
+      213: -8087790211589838449
+    second: Arbustos y flores pixelados para bosque medieval_11
+  - first:
+      213: 5686785426317882697
+    second: Arbustos y flores pixelados para bosque medieval_12
+  - first:
+      213: 7969694884190287720
+    second: Arbustos y flores pixelados para bosque medieval_13
+  - first:
+      213: 5307751799914099506
+    second: Arbustos y flores pixelados para bosque medieval_14
+  - first:
+      213: -8002754254288148582
+    second: Arbustos y flores pixelados para bosque medieval_15
+  - first:
+      213: -1111372629300129581
+    second: Arbustos y flores pixelados para bosque medieval_16
+  - first:
+      213: -2497033237714950508
+    second: Arbustos y flores pixelados para bosque medieval_17
+  - first:
+      213: 3651934312949501053
+    second: Arbustos y flores pixelados para bosque medieval_18
+  - first:
+      213: 4211107433650344204
+    second: Arbustos y flores pixelados para bosque medieval_19
+  - first:
+      213: 8385203341825338912
+    second: Arbustos y flores pixelados para bosque medieval_20
+  - first:
+      213: 7587716854714836418
+    second: Arbustos y flores pixelados para bosque medieval_21
+  - first:
+      213: 6359432685776804815
+    second: Arbustos y flores pixelados para bosque medieval_22
+  - first:
+      213: 7823930994871711263
+    second: Arbustos y flores pixelados para bosque medieval_23
+  - first:
+      213: -8312888549994887952
+    second: Arbustos y flores pixelados para bosque medieval_24
+  - first:
+      213: 7516476773875462595
+    second: Arbustos y flores pixelados para bosque medieval_25
+  - first:
+      213: 3594226790007679976
+    second: Arbustos y flores pixelados para bosque medieval_26
+  - first:
+      213: -3699768692369052356
+    second: Arbustos y flores pixelados para bosque medieval_27
+  - first:
+      213: -6982379384402243722
+    second: Arbustos y flores pixelados para bosque medieval_28
+  - first:
+      213: 3003442651448251600
+    second: Arbustos y flores pixelados para bosque medieval_29
+  - first:
+      213: 6587466222254015621
+    second: Arbustos y flores pixelados para bosque medieval_30
+  - first:
+      213: 534298312461967607
+    second: Arbustos y flores pixelados para bosque medieval_31
+  - first:
+      213: -2171932267964387558
+    second: Arbustos y flores pixelados para bosque medieval_32
+  - first:
+      213: 2303192057413107425
+    second: Arbustos y flores pixelados para bosque medieval_33
+  - first:
+      213: -3603390485016042918
+    second: Arbustos y flores pixelados para bosque medieval_34
+  - first:
+      213: -5965049628302095933
+    second: Arbustos y flores pixelados para bosque medieval_35
+  - first:
+      213: 1526058216589289970
+    second: Arbustos y flores pixelados para bosque medieval_36
+  - first:
+      213: -7452638998666577899
+    second: Arbustos y flores pixelados para bosque medieval_37
+  - first:
+      213: -444011172439650392
+    second: Arbustos y flores pixelados para bosque medieval_38
+  - first:
+      213: 5552977245739801727
+    second: Arbustos y flores pixelados para bosque medieval_39
+  - first:
+      213: -4260521239001888441
+    second: Arbustos y flores pixelados para bosque medieval_40
+  - first:
+      213: 5367357992626172561
+    second: Arbustos y flores pixelados para bosque medieval_41
+  - first:
+      213: 814947919229143991
+    second: Arbustos y flores pixelados para bosque medieval_42
+  - first:
+      213: -4108649519144177736
+    second: Arbustos y flores pixelados para bosque medieval_43
+  - first:
+      213: 4108998477057985202
+    second: Arbustos y flores pixelados para bosque medieval_44
+  - first:
+      213: -5691377640066183632
+    second: Arbustos y flores pixelados para bosque medieval_45
+  - first:
+      213: -8569471471693202074
+    second: Arbustos y flores pixelados para bosque medieval_46
+  - first:
+      213: 6446250341265770676
+    second: Arbustos y flores pixelados para bosque medieval_47
+  - first:
+      213: -8416503444900113173
+    second: Arbustos y flores pixelados para bosque medieval_48
+  - first:
+      213: -3963557846685761124
+    second: Arbustos y flores pixelados para bosque medieval_49
+  - first:
+      213: 8650587429201698640
+    second: Arbustos y flores pixelados para bosque medieval_50
+  - first:
+      213: 969541363382992536
+    second: Arbustos y flores pixelados para bosque medieval_51
+  - first:
+      213: -5205004533521179208
+    second: Arbustos y flores pixelados para bosque medieval_52
+  - first:
+      213: -3209253672447165858
+    second: Arbustos y flores pixelados para bosque medieval_53
+  - first:
+      213: -564422293662903118
+    second: Arbustos y flores pixelados para bosque medieval_54
+  - first:
+      213: 5903359030032522777
+    second: Arbustos y flores pixelados para bosque medieval_55
+  - first:
+      213: 4719750080630585170
+    second: Arbustos y flores pixelados para bosque medieval_56
+  - first:
+      213: 3356986282743975401
+    second: Arbustos y flores pixelados para bosque medieval_57
+  - first:
+      213: -2554304155089506738
+    second: Arbustos y flores pixelados para bosque medieval_58
+  - first:
+      213: -2813946091432126292
+    second: Arbustos y flores pixelados para bosque medieval_59
+  - first:
+      213: -2602837883446244333
+    second: Arbustos y flores pixelados para bosque medieval_60
+  - first:
+      213: 3785916635874966029
+    second: Arbustos y flores pixelados para bosque medieval_61
+  - first:
+      213: 8359618466029679885
+    second: Arbustos y flores pixelados para bosque medieval_62
+  - first:
+      213: -8733151852440888185
+    second: Arbustos y flores pixelados para bosque medieval_63
+  - first:
+      213: -5678027730933713085
+    second: Arbustos y flores pixelados para bosque medieval_64
+  - first:
+      213: 4216643600576801560
+    second: Arbustos y flores pixelados para bosque medieval_65
+  - first:
+      213: 7516293347054049419
+    second: Arbustos y flores pixelados para bosque medieval_66
+  - first:
+      213: 7700092262163052834
+    second: Arbustos y flores pixelados para bosque medieval_67
+  - first:
+      213: 8551460074631870833
+    second: Arbustos y flores pixelados para bosque medieval_68
+  - first:
+      213: 6930084342737609757
+    second: Arbustos y flores pixelados para bosque medieval_69
+  - first:
+      213: -5151112987363080205
+    second: Arbustos y flores pixelados para bosque medieval_70
+  - first:
+      213: -1435829086648766207
+    second: Arbustos y flores pixelados para bosque medieval_71
+  - first:
+      213: -6920692136393088481
+    second: Arbustos y flores pixelados para bosque medieval_72
+  - first:
+      213: 8135352130363359393
+    second: Arbustos y flores pixelados para bosque medieval_73
+  - first:
+      213: -8272139046451983509
+    second: Arbustos y flores pixelados para bosque medieval_74
+  - first:
+      213: -2625229583020236259
+    second: Arbustos y flores pixelados para bosque medieval_75
+  - first:
+      213: -1148273413031587554
+    second: Arbustos y flores pixelados para bosque medieval_76
+  - first:
+      213: -1955945900036072291
+    second: Arbustos y flores pixelados para bosque medieval_77
+  - first:
+      213: -8792660481270509895
+    second: Arbustos y flores pixelados para bosque medieval_78
+  - first:
+      213: -9049172541553195195
+    second: Arbustos y flores pixelados para bosque medieval_79
+  - first:
+      213: 6367187110569262314
+    second: Arbustos y flores pixelados para bosque medieval_80
+  - first:
+      213: 6823383205357270126
+    second: Arbustos y flores pixelados para bosque medieval_81
+  - first:
+      213: 6283814798007583999
+    second: Arbustos y flores pixelados para bosque medieval_82
+  - first:
+      213: -2327354575996047793
+    second: Arbustos y flores pixelados para bosque medieval_83
+  - first:
+      213: -503643376195308832
+    second: Arbustos y flores pixelados para bosque medieval_84
+  - first:
+      213: 8555400506982965141
+    second: Arbustos y flores pixelados para bosque medieval_85
+  - first:
+      213: 1707190464892542171
+    second: Arbustos y flores pixelados para bosque medieval_86
+  - first:
+      213: -8029873141706214752
+    second: Arbustos y flores pixelados para bosque medieval_87
+  - first:
+      213: -5896765039867237709
+    second: Arbustos y flores pixelados para bosque medieval_88
+  - first:
+      213: -5640163504031671535
+    second: Arbustos y flores pixelados para bosque medieval_89
+  - first:
+      213: -4933998743244948298
+    second: Arbustos y flores pixelados para bosque medieval_90
+  - first:
+      213: 8317431207671021742
+    second: Arbustos y flores pixelados para bosque medieval_91
+  - first:
+      213: 2543617142229559951
+    second: Arbustos y flores pixelados para bosque medieval_92
+  - first:
+      213: 1205844988396939253
+    second: Arbustos y flores pixelados para bosque medieval_93
+  - first:
+      213: -6253370147407072380
+    second: Arbustos y flores pixelados para bosque medieval_94
+  - first:
+      213: -7249429107627509123
+    second: Arbustos y flores pixelados para bosque medieval_95
+  - first:
+      213: -4166868027242856389
+    second: Arbustos y flores pixelados para bosque medieval_96
+  - first:
+      213: -4244497825538998294
+    second: Arbustos y flores pixelados para bosque medieval_97
+  - first:
+      213: -4927211537770460600
+    second: Arbustos y flores pixelados para bosque medieval_98
+  - first:
+      213: 1839488953676449925
+    second: Arbustos y flores pixelados para bosque medieval_99
+  - first:
+      213: -2116534215897293542
+    second: Arbustos y flores pixelados para bosque medieval_100
+  - first:
+      213: 910807211544733858
+    second: Arbustos y flores pixelados para bosque medieval_101
+  - first:
+      213: 2009320103035893120
+    second: Arbustos y flores pixelados para bosque medieval_102
+  - first:
+      213: 6960048899376003253
+    second: Arbustos y flores pixelados para bosque medieval_103
+  - first:
+      213: -6724754308888495276
+    second: Arbustos y flores pixelados para bosque medieval_104
+  - first:
+      213: -5705498032458881435
+    second: Arbustos y flores pixelados para bosque medieval_105
+  - first:
+      213: -6594843054271488155
+    second: Arbustos y flores pixelados para bosque medieval_106
+  - first:
+      213: -7893093161949523172
+    second: Arbustos y flores pixelados para bosque medieval_107
+  - first:
+      213: 7954279818018757698
+    second: Arbustos y flores pixelados para bosque medieval_108
+  - first:
+      213: -5671988465686345010
+    second: Arbustos y flores pixelados para bosque medieval_109
+  - first:
+      213: -5807609698566127112
+    second: Arbustos y flores pixelados para bosque medieval_110
+  - first:
+      213: -8916120632453556806
+    second: Arbustos y flores pixelados para bosque medieval_111
+  - first:
+      213: -6895887186875762932
+    second: Arbustos y flores pixelados para bosque medieval_112
+  - first:
+      213: -6889053787023157787
+    second: Arbustos y flores pixelados para bosque medieval_113
+  - first:
+      213: -1065349377040721217
+    second: Arbustos y flores pixelados para bosque medieval_114
+  - first:
+      213: 1376075102984904581
+    second: Arbustos y flores pixelados para bosque medieval_115
+  - first:
+      213: 1057240755705662505
+    second: Arbustos y flores pixelados para bosque medieval_116
+  - first:
+      213: -4058283136082004591
+    second: Arbustos y flores pixelados para bosque medieval_117
+  - first:
+      213: -62845723053243194
+    second: Arbustos y flores pixelados para bosque medieval_118
+  - first:
+      213: -5036014046024005017
+    second: Arbustos y flores pixelados para bosque medieval_119
+  - first:
+      213: 6042086361625994684
+    second: Arbustos y flores pixelados para bosque medieval_120
+  - first:
+      213: 7922386903433528779
+    second: Arbustos y flores pixelados para bosque medieval_121
+  - first:
+      213: -6243285535661700319
+    second: Arbustos y flores pixelados para bosque medieval_122
+  - first:
+      213: 4488567648528983750
+    second: Arbustos y flores pixelados para bosque medieval_123
+  - first:
+      213: -280199149194806840
+    second: Arbustos y flores pixelados para bosque medieval_124
+  - first:
+      213: -3594184835537016602
+    second: Arbustos y flores pixelados para bosque medieval_125
+  - first:
+      213: -2925479564491028399
+    second: Arbustos y flores pixelados para bosque medieval_126
+  - first:
+      213: -632731207845642577
+    second: Arbustos y flores pixelados para bosque medieval_127
+  - first:
+      213: -7531476034780337056
+    second: Arbustos y flores pixelados para bosque medieval_128
+  - first:
+      213: -2935843337119213712
+    second: Arbustos y flores pixelados para bosque medieval_129
+  - first:
+      213: 5268426037587200415
+    second: Arbustos y flores pixelados para bosque medieval_130
+  - first:
+      213: 7480249589052950327
+    second: Arbustos y flores pixelados para bosque medieval_131
+  - first:
+      213: -6046595113771821293
+    second: Arbustos y flores pixelados para bosque medieval_132
+  - first:
+      213: 5896951255558706607
+    second: Arbustos y flores pixelados para bosque medieval_133
+  - first:
+      213: 7103865108407433990
+    second: Arbustos y flores pixelados para bosque medieval_134
+  - first:
+      213: 411338946041102424
+    second: Arbustos y flores pixelados para bosque medieval_135
+  - first:
+      213: -3480730678913546907
+    second: Arbustos y flores pixelados para bosque medieval_136
+  - first:
+      213: 1220984436440272849
+    second: Arbustos y flores pixelados para bosque medieval_137
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 779
+        width: 287
+        height: 176
+      alignment: 9
+      pivot: {x: 0.5042309, y: 0.6586845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 912fe634e08c943c0800000000000000
+      internalID: -4374745599427284455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_39
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 175
+        width: 767
+        height: 592
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7cd5225263201d40800000000000000
+      internalID: 5552977245739801727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_40
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 756
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749094f91869fd4c0800000000000000
+      internalID: -4260521239001888441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_41
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 746
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19236d428afac7a40800000000000000
+      internalID: 5367357992626172561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_42
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 750
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bbc81490d64f4b00800000000000000
+      internalID: 814947919229143991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_43
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 734
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bfe4d8e7052bf6c0800000000000000
+      internalID: -4108649519144177736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_53
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 494
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a3babc9c07673d0800000000000000
+      internalID: -3209253672447165858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_54
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 498
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b459e21ae4ca28f0800000000000000
+      internalID: -564422293662903118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_55
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 498
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91edeaea2c1fce150800000000000000
+      internalID: 5903359030032522777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_58
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 473
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ee59b77e94d8cd0800000000000000
+      internalID: -2554304155089506738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_59
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 474
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8d61350fad2f8d0800000000000000
+      internalID: -2813946091432126292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_60
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 488
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31cc1454cbcd0ebd0800000000000000
+      internalID: -2602837883446244333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_61
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 275
+        width: 267
+        height: 212
+      alignment: 9
+      pivot: {x: 0.5000005, y: 0.5515498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ab1962f174a8430800000000000000
+      internalID: 3785916635874966029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_62
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 477
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d05be7524b4530470800000000000000
+      internalID: 8359618466029679885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_64
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 470
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347f0e8bcd79331b0800000000000000
+      internalID: -5678027730933713085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_65
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 466
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81bedc49307848a30800000000000000
+      internalID: 4216643600576801560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_66
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 462
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b88d9c2e9fc3f4860800000000000000
+      internalID: 7516293347054049419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_67
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 464
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22976f79d193cda60800000000000000
+      internalID: 7700092262163052834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_68
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 464
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1793e5b51a3eca670800000000000000
+      internalID: 8551460074631870833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_69
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 472
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d142f581efa9c2060800000000000000
+      internalID: 6930084342737609757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_70
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 466
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7825e97029388b0800000000000000
+      internalID: -5151112987363080205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_71
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 448
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10170249d09e21ce0800000000000000
+      internalID: -1435829086648766207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_72
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 262
+        width: 298
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12637a5b23c4ff90800000000000000
+      internalID: -6920692136393088481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_73
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 466
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0860dd8a396e070800000000000000
+      internalID: 8135352130363359393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_78
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 428
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be8147b0e13af580800000000000000
+      internalID: -8792660481270509895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_79
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 408
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547c08d9481ea6280800000000000000
+      internalID: -9049172541553195195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_80
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 392
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec3de731facc5850800000000000000
+      internalID: 6367187110569262314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_81
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 386
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64bfa99fd681be50800000000000000
+      internalID: 6823383205357270126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_82
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 388
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4c5950448943750800000000000000
+      internalID: 6283814798007583999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_83
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 400
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e206f085393bfd0800000000000000
+      internalID: -2327354575996047793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_84
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 392
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2766c8403b209f0800000000000000
+      internalID: -503643376195308832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_85
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 380
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f9ae1ce63eab670800000000000000
+      internalID: 8555400506982965141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_86
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 386
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdc9ad7cea821b710800000000000000
+      internalID: 1707190464892542171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_87
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 376
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a2b625fbe8209090800000000000000
+      internalID: -8029873141706214752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_88
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 368
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ba65ca407b7a2ea0800000000000000
+      internalID: -5896765039867237709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_89
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 371
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11bd11b0d2d1ab1b0800000000000000
+      internalID: -5640163504031671535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_90
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 360
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc39a2d84ae68bb0800000000000000
+      internalID: -4933998743244948298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_91
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 374
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea0caf0ad937d6370800000000000000
+      internalID: 8317431207671021742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_92
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 292
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8aef2f605ebc4320800000000000000
+      internalID: 2543617142229559951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_93
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 332
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7a59bc0a50cb010800000000000000
+      internalID: 1205844988396939253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_94
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 324
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 483f4c29bf09739a0800000000000000
+      internalID: -6253370147407072380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_95
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 326
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a3c7fb2aad46b90800000000000000
+      internalID: -7249429107627509123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_96
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 270
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30c1423b9f4c26c0800000000000000
+      internalID: -4166868027242856389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_97
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 312
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef74da47b38815c0800000000000000
+      internalID: -4244497825538998294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_98
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 288
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a4cfd36370f9bb0800000000000000
+      internalID: -4927211537770460600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_101
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 280
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8ecfe4556d3ac00800000000000000
+      internalID: 910807211544733858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_102
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 287
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0857185ecf982eb10800000000000000
+      internalID: 2009320103035893120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_104
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 228
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b7ce8d59fdca2a0800000000000000
+      internalID: -6724754308888495276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_105
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 256
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 566299cb4cff1d0b0800000000000000
+      internalID: -5705498032458881435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_106
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 250
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f12b0ee296a74a0800000000000000
+      internalID: -6594843054271488155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_107
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 246
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c131feea699167290800000000000000
+      internalID: -7893093161949523172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_108
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 248
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24c1115d957436e60800000000000000
+      internalID: 7954279818018757698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_109
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 0
+        width: 368
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca07acba8c0941b0800000000000000
+      internalID: -5671988465686345010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_110
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 220
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f14adacfb9376fa0800000000000000
+      internalID: -5807609698566127112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_111
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 0
+        width: 330
+        height: 237
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab513104683934480800000000000000
+      internalID: -8916120632453556806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_112
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 228
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c073a17b323ec40a0800000000000000
+      internalID: -6895887186875762932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_113
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 234
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5dce9941a2560a0800000000000000
+      internalID: -6889053787023157787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_114
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 224
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbaddc3d26e1731f0800000000000000
+      internalID: -1065349377040721217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_115
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 228
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58f9ca1f30dc81310800000000000000
+      internalID: 1376075102984904581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_116
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 230
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92cc6e5add21cae00800000000000000
+      internalID: 1057240755705662505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_117
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 226
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 195bfdb4df41ea7c0800000000000000
+      internalID: -4058283136082004591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_118
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 223
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c442c9d52ab02ff0800000000000000
+      internalID: -62845723053243194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_119
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 354
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a8cd638eb7c1ab0800000000000000
+      internalID: -5036014046024005017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_120
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 210
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb523f6988dc9d350800000000000000
+      internalID: 6042086361625994684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_121
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 0
+        width: 368
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5cc500ae8f1fd60800000000000000
+      internalID: 7922386903433528779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_122
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 182
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12bcc8732e46b59a0800000000000000
+      internalID: -6243285535661700319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_123
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 194
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c661e0be789a4e30800000000000000
+      internalID: 4488567648528983750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_124
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 136
+        width: 37
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c970edbb588c1cf0800000000000000
+      internalID: -280199149194806840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_125
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 164
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e868b45fe3ee1ec0800000000000000
+      internalID: -3594184835537016602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_126
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 176
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15809d006db9667d0800000000000000
+      internalID: -2925479564491028399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_127
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 160
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae7e0e91561837f0800000000000000
+      internalID: -632731207845642577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_128
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 128
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06cec882372da7790800000000000000
+      internalID: -7531476034780337056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_129
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 129
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 077dfc62a0ac147d0800000000000000
+      internalID: -2935843337119213712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_130
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 136
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99cdcf51953d1940800000000000000
+      internalID: 5268426037587200415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_131
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 34
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73743c28e5f2fc760800000000000000
+      internalID: 7480249589052950327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_132
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 36
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317940fb7cd261ca0800000000000000
+      internalID: -6046595113771821293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_133
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 44
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa5de5d6ced26d150800000000000000
+      internalID: 5896951255558706607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_134
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 36
+        width: 33
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60bbaee9daff59260800000000000000
+      internalID: 7103865108407433990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_135
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 12
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8504011979e55b500800000000000000
+      internalID: 411338946041102424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_136
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 20
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 565cd84a3e5f1bfc0800000000000000
+      internalID: -3480730678913546907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbustos y flores pixelados para bosque medieval_137
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 0
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df8d4a30eec1f010800000000000000
+      internalID: 1220984436440272849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 70ae74801f7ff2d4dbb59c446cb919e1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Arbustos y flores pixelados para bosque medieval_0: -4374745599427284455
+      Arbustos y flores pixelados para bosque medieval_1: -2966328840386534836
+      Arbustos y flores pixelados para bosque medieval_10: 1337289183606670259
+      Arbustos y flores pixelados para bosque medieval_100: -2116534215897293542
+      Arbustos y flores pixelados para bosque medieval_101: 910807211544733858
+      Arbustos y flores pixelados para bosque medieval_102: 2009320103035893120
+      Arbustos y flores pixelados para bosque medieval_103: 6960048899376003253
+      Arbustos y flores pixelados para bosque medieval_104: -6724754308888495276
+      Arbustos y flores pixelados para bosque medieval_105: -5705498032458881435
+      Arbustos y flores pixelados para bosque medieval_106: -6594843054271488155
+      Arbustos y flores pixelados para bosque medieval_107: -7893093161949523172
+      Arbustos y flores pixelados para bosque medieval_108: 7954279818018757698
+      Arbustos y flores pixelados para bosque medieval_109: -5671988465686345010
+      Arbustos y flores pixelados para bosque medieval_11: -8087790211589838449
+      Arbustos y flores pixelados para bosque medieval_110: -5807609698566127112
+      Arbustos y flores pixelados para bosque medieval_111: -8916120632453556806
+      Arbustos y flores pixelados para bosque medieval_112: -6895887186875762932
+      Arbustos y flores pixelados para bosque medieval_113: -6889053787023157787
+      Arbustos y flores pixelados para bosque medieval_114: -1065349377040721217
+      Arbustos y flores pixelados para bosque medieval_115: 1376075102984904581
+      Arbustos y flores pixelados para bosque medieval_116: 1057240755705662505
+      Arbustos y flores pixelados para bosque medieval_117: -4058283136082004591
+      Arbustos y flores pixelados para bosque medieval_118: -62845723053243194
+      Arbustos y flores pixelados para bosque medieval_119: -5036014046024005017
+      Arbustos y flores pixelados para bosque medieval_12: 5686785426317882697
+      Arbustos y flores pixelados para bosque medieval_120: 6042086361625994684
+      Arbustos y flores pixelados para bosque medieval_121: 7922386903433528779
+      Arbustos y flores pixelados para bosque medieval_122: -6243285535661700319
+      Arbustos y flores pixelados para bosque medieval_123: 4488567648528983750
+      Arbustos y flores pixelados para bosque medieval_124: -280199149194806840
+      Arbustos y flores pixelados para bosque medieval_125: -3594184835537016602
+      Arbustos y flores pixelados para bosque medieval_126: -2925479564491028399
+      Arbustos y flores pixelados para bosque medieval_127: -632731207845642577
+      Arbustos y flores pixelados para bosque medieval_128: -7531476034780337056
+      Arbustos y flores pixelados para bosque medieval_129: -2935843337119213712
+      Arbustos y flores pixelados para bosque medieval_13: 7969694884190287720
+      Arbustos y flores pixelados para bosque medieval_130: 5268426037587200415
+      Arbustos y flores pixelados para bosque medieval_131: 7480249589052950327
+      Arbustos y flores pixelados para bosque medieval_132: -6046595113771821293
+      Arbustos y flores pixelados para bosque medieval_133: 5896951255558706607
+      Arbustos y flores pixelados para bosque medieval_134: 7103865108407433990
+      Arbustos y flores pixelados para bosque medieval_135: 411338946041102424
+      Arbustos y flores pixelados para bosque medieval_136: -3480730678913546907
+      Arbustos y flores pixelados para bosque medieval_137: 1220984436440272849
+      Arbustos y flores pixelados para bosque medieval_14: 5307751799914099506
+      Arbustos y flores pixelados para bosque medieval_15: -8002754254288148582
+      Arbustos y flores pixelados para bosque medieval_16: -1111372629300129581
+      Arbustos y flores pixelados para bosque medieval_17: -2497033237714950508
+      Arbustos y flores pixelados para bosque medieval_18: 3651934312949501053
+      Arbustos y flores pixelados para bosque medieval_19: 4211107433650344204
+      Arbustos y flores pixelados para bosque medieval_2: 6196429281935070715
+      Arbustos y flores pixelados para bosque medieval_20: 8385203341825338912
+      Arbustos y flores pixelados para bosque medieval_21: 7587716854714836418
+      Arbustos y flores pixelados para bosque medieval_22: 6359432685776804815
+      Arbustos y flores pixelados para bosque medieval_23: 7823930994871711263
+      Arbustos y flores pixelados para bosque medieval_24: -8312888549994887952
+      Arbustos y flores pixelados para bosque medieval_25: 7516476773875462595
+      Arbustos y flores pixelados para bosque medieval_26: 3594226790007679976
+      Arbustos y flores pixelados para bosque medieval_27: -3699768692369052356
+      Arbustos y flores pixelados para bosque medieval_28: -6982379384402243722
+      Arbustos y flores pixelados para bosque medieval_29: 3003442651448251600
+      Arbustos y flores pixelados para bosque medieval_3: -454913886616269637
+      Arbustos y flores pixelados para bosque medieval_30: 6587466222254015621
+      Arbustos y flores pixelados para bosque medieval_31: 534298312461967607
+      Arbustos y flores pixelados para bosque medieval_32: -2171932267964387558
+      Arbustos y flores pixelados para bosque medieval_33: 2303192057413107425
+      Arbustos y flores pixelados para bosque medieval_34: -3603390485016042918
+      Arbustos y flores pixelados para bosque medieval_35: -5965049628302095933
+      Arbustos y flores pixelados para bosque medieval_36: 1526058216589289970
+      Arbustos y flores pixelados para bosque medieval_37: -7452638998666577899
+      Arbustos y flores pixelados para bosque medieval_38: -444011172439650392
+      Arbustos y flores pixelados para bosque medieval_39: 5552977245739801727
+      Arbustos y flores pixelados para bosque medieval_4: 8874453894069230230
+      Arbustos y flores pixelados para bosque medieval_40: -4260521239001888441
+      Arbustos y flores pixelados para bosque medieval_41: 5367357992626172561
+      Arbustos y flores pixelados para bosque medieval_42: 814947919229143991
+      Arbustos y flores pixelados para bosque medieval_43: -4108649519144177736
+      Arbustos y flores pixelados para bosque medieval_44: 4108998477057985202
+      Arbustos y flores pixelados para bosque medieval_45: -5691377640066183632
+      Arbustos y flores pixelados para bosque medieval_46: -8569471471693202074
+      Arbustos y flores pixelados para bosque medieval_47: 6446250341265770676
+      Arbustos y flores pixelados para bosque medieval_48: -8416503444900113173
+      Arbustos y flores pixelados para bosque medieval_49: -3963557846685761124
+      Arbustos y flores pixelados para bosque medieval_5: 6479508958320269350
+      Arbustos y flores pixelados para bosque medieval_50: 8650587429201698640
+      Arbustos y flores pixelados para bosque medieval_51: 969541363382992536
+      Arbustos y flores pixelados para bosque medieval_52: -5205004533521179208
+      Arbustos y flores pixelados para bosque medieval_53: -3209253672447165858
+      Arbustos y flores pixelados para bosque medieval_54: -564422293662903118
+      Arbustos y flores pixelados para bosque medieval_55: 5903359030032522777
+      Arbustos y flores pixelados para bosque medieval_56: 4719750080630585170
+      Arbustos y flores pixelados para bosque medieval_57: 3356986282743975401
+      Arbustos y flores pixelados para bosque medieval_58: -2554304155089506738
+      Arbustos y flores pixelados para bosque medieval_59: -2813946091432126292
+      Arbustos y flores pixelados para bosque medieval_6: 3262082529163499019
+      Arbustos y flores pixelados para bosque medieval_60: -2602837883446244333
+      Arbustos y flores pixelados para bosque medieval_61: 3785916635874966029
+      Arbustos y flores pixelados para bosque medieval_62: 8359618466029679885
+      Arbustos y flores pixelados para bosque medieval_63: -8733151852440888185
+      Arbustos y flores pixelados para bosque medieval_64: -5678027730933713085
+      Arbustos y flores pixelados para bosque medieval_65: 4216643600576801560
+      Arbustos y flores pixelados para bosque medieval_66: 7516293347054049419
+      Arbustos y flores pixelados para bosque medieval_67: 7700092262163052834
+      Arbustos y flores pixelados para bosque medieval_68: 8551460074631870833
+      Arbustos y flores pixelados para bosque medieval_69: 6930084342737609757
+      Arbustos y flores pixelados para bosque medieval_7: -3769649863748603560
+      Arbustos y flores pixelados para bosque medieval_70: -5151112987363080205
+      Arbustos y flores pixelados para bosque medieval_71: -1435829086648766207
+      Arbustos y flores pixelados para bosque medieval_72: -6920692136393088481
+      Arbustos y flores pixelados para bosque medieval_73: 8135352130363359393
+      Arbustos y flores pixelados para bosque medieval_74: -8272139046451983509
+      Arbustos y flores pixelados para bosque medieval_75: -2625229583020236259
+      Arbustos y flores pixelados para bosque medieval_76: -1148273413031587554
+      Arbustos y flores pixelados para bosque medieval_77: -1955945900036072291
+      Arbustos y flores pixelados para bosque medieval_78: -8792660481270509895
+      Arbustos y flores pixelados para bosque medieval_79: -9049172541553195195
+      Arbustos y flores pixelados para bosque medieval_8: 7200495640557626620
+      Arbustos y flores pixelados para bosque medieval_80: 6367187110569262314
+      Arbustos y flores pixelados para bosque medieval_81: 6823383205357270126
+      Arbustos y flores pixelados para bosque medieval_82: 6283814798007583999
+      Arbustos y flores pixelados para bosque medieval_83: -2327354575996047793
+      Arbustos y flores pixelados para bosque medieval_84: -503643376195308832
+      Arbustos y flores pixelados para bosque medieval_85: 8555400506982965141
+      Arbustos y flores pixelados para bosque medieval_86: 1707190464892542171
+      Arbustos y flores pixelados para bosque medieval_87: -8029873141706214752
+      Arbustos y flores pixelados para bosque medieval_88: -5896765039867237709
+      Arbustos y flores pixelados para bosque medieval_89: -5640163504031671535
+      Arbustos y flores pixelados para bosque medieval_9: 2751477000085320301
+      Arbustos y flores pixelados para bosque medieval_90: -4933998743244948298
+      Arbustos y flores pixelados para bosque medieval_91: 8317431207671021742
+      Arbustos y flores pixelados para bosque medieval_92: 2543617142229559951
+      Arbustos y flores pixelados para bosque medieval_93: 1205844988396939253
+      Arbustos y flores pixelados para bosque medieval_94: -6253370147407072380
+      Arbustos y flores pixelados para bosque medieval_95: -7249429107627509123
+      Arbustos y flores pixelados para bosque medieval_96: -4166868027242856389
+      Arbustos y flores pixelados para bosque medieval_97: -4244497825538998294
+      Arbustos y flores pixelados para bosque medieval_98: -4927211537770460600
+      Arbustos y flores pixelados para bosque medieval_99: 1839488953676449925
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

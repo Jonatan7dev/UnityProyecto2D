@@ -68,7 +68,10 @@ public class PlayerState : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!EstaMuerto && other.CompareTag("Bandera"))
-            SceneManager.LoadScene("Scene_one");
+            SceneManager.LoadScene("Level_1");
+        else if (!EstaMuerto && other.CompareTag("Bandera2"))
+            SceneManager.LoadScene("Menu");
+                
     }
 
     // Conservar aquí si algún botón de UI usa este método.

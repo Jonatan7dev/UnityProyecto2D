@@ -12,6 +12,9 @@ public class PlayerState : MonoBehaviour
     [Header("UI")]
     public Text texto;
 
+    [Header("Game Manager")]
+    [SerializeField] private GameManager gameManager;
+
     private PlayerAnimation anim;
 
     public bool EstaMuerto { get; private set; }
@@ -63,9 +66,12 @@ public class PlayerState : MonoBehaviour
 
         EstaMuerto = true;
 
+        // Reproducir la animación de muerte.
         anim?.AnimDead();
 
-        Time.timeScale = 0;
+        // Avisar al GameManager.
+        if (gameManager != null)
+            gameManager.GameOver();
 
         Debug.Log("El personaje ha muerto.");
     }

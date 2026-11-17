@@ -12,6 +12,8 @@ public class PlayerState : MonoBehaviour
     [Header("UI")]
     public Text texto;
 
+    private PlayerAnimation anim;
+
     public bool EstaMuerto { get; private set; }
 
     private float siguienteDanoLava;
@@ -22,6 +24,11 @@ public class PlayerState : MonoBehaviour
         if (hp <= 0) Morir();
     }
 
+    private void Awake()
+    {
+        anim = GetComponent<PlayerAnimation>();
+    }
+
     private void Update()
     {
         if (!EstaMuerto && hp <= 0) Morir();
@@ -29,21 +36,38 @@ public class PlayerState : MonoBehaviour
 
     public void Vida(int dano)
     {
-        if (EstaMuerto) return;
+        if (EstaMuerto || dano <= 0)
+            return;
 
         hp = Mathf.Max(0, hp - dano);
+
         Debug.Log("Vida restante: " + hp);
+
         MostrarTexto();
 
-        if (hp <= 0) Morir();
+        // Si el daño es mortal, gestionar la muerte.
+        if (hp <= 0)
+        {
+            Morir();
+            return;
+        }
+
+        // Reproducir la animación al recibir daño.
+        anim?.RecibirGolpe();
     }
 
     private void Morir()
     {
-        if (EstaMuerto) return;
+        if (EstaMuerto)
+            return;
+
         EstaMuerto = true;
+
+        anim?.AnimDead();
+
+        Time.timeScale = 0;
+
         Debug.Log("El personaje ha muerto.");
-        // PlayerMovement y PlayerAttack comprueban EstaMuerto antes de actuar.
     }
 
     private void MostrarTexto()

@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using System.Collections;
 
@@ -26,9 +25,9 @@ public class PlayerMovement : MonoBehaviour
     public bool enSuelo;
 
     [Header("Animación")]
-    private EstadoPlayer estado;
     private PlayerAnimation anim;
     private bool atacando;
+    private bool saltoSolicitado;
 
 
     private void Awake()
@@ -44,9 +43,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (state.EstaMuerto) return;
 
-        Mover();
-        ComprobarSuelo();
-        Saltar();
+        x = Input.GetAxisRaw("Horizontal");
+        CambiarDireccion(x);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            saltoSolicitado = true;
 
         if (Input.GetMouseButtonDown(0) && !atacando)
         {
@@ -54,18 +55,30 @@ public class PlayerMovement : MonoBehaviour
         }
 
         anim.ActualizarAnimacion(x, enSuelo, atacando);
-        //Animacion(x);
     }
-    
 
-    private void Mover()
+    private void FixedUpdate()
     {
-        x = Input.GetAxisRaw("Horizontal");
-        CambiarDireccion(x);
+        if (state.EstaMuerto)
+        {
+            saltoSolicitado = false;
+            rb.linearVelocityX = 0f;
+            return;
+        }
 
-        // Mantiene el mismo movimiento que el script original.
-        transform.Translate(Vector3.right * x * speed * Time.deltaTime);
-        //animator.SetBool("IsRunning", x != 0f);
+        ComprobarSuelo();
+
+        Vector2 velocidad = rb.linearVelocity;
+        velocidad.x = x * speed;
+
+        if (saltoSolicitado && enSuelo)
+        {
+            velocidad.y = fuerzaSalto;
+            enSuelo = false;
+        }
+
+        saltoSolicitado = false;
+        rb.linearVelocity = velocidad;
     }
 
     private void CambiarDireccion(float x)
@@ -84,18 +97,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void ComprobarSuelo()
     {
-        if (groundCheck == null) return;
-        enSuelo = Physics2D.OverlapCircle(groundCheck.position, groundRadius, sueloLayer);
+        enSuelo = groundCheck != null &&
+            Physics2D.OverlapCircle(groundCheck.position, groundRadius, sueloLayer) != null;
     }
-
-    private void Saltar()
-    {
-        if (Input.GetKeyDown(KeyCode.Space) && enSuelo)
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, fuerzaSalto);
-
-        //animator.SetBool("IsJumping", !enSuelo);
-    }
-
 
     private IEnumerator Atacar()
     {

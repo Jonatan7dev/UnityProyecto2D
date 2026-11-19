@@ -1,8 +1,7 @@
 
 using UnityEngine;
-using System.Collections;
 
-[RequireComponent(typeof(SpriteRenderer), typeof(EnemyState))]
+[RequireComponent(typeof(SpriteRenderer), typeof(EnemyState), typeof(Rigidbody2D))]
 public class EnemyMovement : MonoBehaviour
 {
     private enum Estado
@@ -35,288 +34,127 @@ public class EnemyMovement : MonoBehaviour
     public Transform puntoVision;
     public LayerMask paredLayer;
 
-    [Header("Ataque")]
-    private bool atacando;
-
+    private Rigidbody2D cuerpo;
+    private SpriteRenderer sprite;
+    private EnemyState vida;
     private Transform jugador;
-    private Transform objetivoPatrulla;
-
-    private SpriteRenderer sr;
-    private EnemyState state;
-    private EnemyAnimation anim;
-
-    private Estado estado = Estado.Patrulla;
-
-    private float tiempoSinVer;
-    private float temporizadorObjetivo;
-    private float tiempoRegreso;
-    private float objetivoJugador;
-
-    private float direccionMovimiento;
+    private Transform punto;
+    private Estado estado;
+    private float ultimaVision;
+    private float actualizarObjetivo;
+    private float destinoJugador;
+    private float limiteRegreso;
+    private float xAnterior;
 
     private void Awake()
     {
-        sr = GetComponent<SpriteRenderer>();
-        state = GetComponent<EnemyState>();
-        anim = GetComponent<EnemyAnimation>();
+        cuerpo = GetComponent<Rigidbody2D>();
+        sprite = GetComponent<SpriteRenderer>();
+        vida = GetComponent<EnemyState>();
     }
 
     private void Start()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-
-        if (player != null)
-            jugador = player.transform;
-
-        if (puntoA == null || puntoB == null || puntoReaparicion == null)
+        jugador = GameObject.FindGameObjectWithTag("Player")?.transform;
+        if (!puntoA || !puntoB || !puntoReaparicion)
         {
-            Debug.LogWarning(
-                "Faltan puntos de patrulla o reaparición.",
-                this
-            );
-
+            Debug.LogWarning("Faltan puntos de patrulla o reaparición.", this);
             enabled = false;
             return;
         }
-
-        ElegirPuntoPatrullaMasCercano();
+        punto = PuntoMasCercano();
+        xAnterior = cuerpo.position.x;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        if (state.EstaMuerto)
-            return;
-
-        bool veJugador = PuedeVerJugador();
-
-        if (veJugador)
+        if (vida.EstaMuerto) return;
+        float ahora = Time.fixedTime;
+        if (VeJugador())
         {
-            if (estado != Estado.Persecucion)
+            if (estado != Estado.Persecucion || ahora >= actualizarObjetivo)
             {
-                objetivoJugador = jugador.position.x;
-                temporizadorObjetivo = 0f;
-                tiempoRegreso = 0f;
+                destinoJugador = jugador.position.x;
+                actualizarObjetivo = ahora + retrasoCambioObjetivo;
             }
-
             estado = Estado.Persecucion;
-            tiempoSinVer = 0f;
+            ultimaVision = ahora;
         }
-        else if (estado == Estado.Persecucion)
+        else if (estado == Estado.Persecucion && (!jugador || ahora - ultimaVision >= tiempoPerderVision))
         {
-            tiempoSinVer += Time.deltaTime;
-
-            if (jugador == null || tiempoSinVer >= tiempoPerderVision)
-                IniciarRegreso();
+            IniciarRegreso(ahora);
         }
 
-        // Reiniciamos la dirección antes de calcular el movimiento.
-        direccionMovimiento = 0f;
-
-        switch (estado)
-        {
-            case Estado.Patrulla:
-
-                MoverHacia(
-                    objetivoPatrulla.position.x,
-                    velocidadPatrulla
-                );
-
-                if (HaLlegadoAlPunto(objetivoPatrulla))
-                {
-                    CambiarPuntoPatrulla();
-                }
-                else if (!EstaALaAlturaDelPunto(objetivoPatrulla))
-                {
-                    IniciarRegreso();
-                }
-
-                break;
-
-            case Estado.Persecucion:
-
-                temporizadorObjetivo += Time.deltaTime;
-
-                if (veJugador &&
-                    temporizadorObjetivo >= retrasoCambioObjetivo)
-                {
-                    objetivoJugador = jugador.position.x;
-                    temporizadorObjetivo = 0f;
-                }
-
-                MoverHacia(
-                    objetivoJugador,
-                    velocidadPersecucion
-                );
-
-                break;
-
-            case Estado.Regreso:
-
-                tiempoRegreso += Time.deltaTime;
-
-                MoverHacia(
-                    objetivoPatrulla.position.x,
-                    velocidadPatrulla
-                );
-
-                if (HaLlegadoAlPunto(objetivoPatrulla))
-                {
-                    CambiarPuntoPatrulla();
-
-                    estado = Estado.Patrulla;
-                    tiempoRegreso = 0f;
-                }
-                else if (tiempoRegreso >= tiempoMaximoRegreso)
-                {
-                    Reaparecer();
-                }
-
-                break;
-        }
-
-        // Actualizamos la animación en cada frame.
-        anim.ActualizarAnimacion(direccionMovimiento, atacando);
+        if (estado == Estado.Persecucion)
+            MoverHacia(destinoJugador, velocidadPersecucion);
+        else
+            SeguirRuta(ahora);
     }
 
-    private void IniciarRegreso()
+    private void SeguirRuta(float ahora)
+    {
+        Vector2 distancia = (Vector2)punto.position - cuerpo.position;
+        bool mismaAltura = Mathf.Abs(distancia.y) <= toleranciaVertical;
+        if (mismaAltura && Mathf.Abs(distancia.x) <= toleranciaHorizontal)
+        {
+            punto = punto == puntoA ? puntoB : puntoA;
+            estado = Estado.Patrulla;
+        }
+        else if (estado == Estado.Patrulla && !mismaAltura)
+            IniciarRegreso(ahora);
+        else if (estado == Estado.Regreso && ahora >= limiteRegreso)
+        {
+            cuerpo.position = puntoReaparicion.position;
+            cuerpo.linearVelocity = Vector2.zero;
+            xAnterior = cuerpo.position.x;
+            punto = PuntoMasCercano();
+            estado = Estado.Patrulla;
+        }
+        MoverHacia(punto.position.x, velocidadPatrulla);
+    }
+
+    private void IniciarRegreso(float ahora)
     {
         estado = Estado.Regreso;
-        tiempoRegreso = 0f;
-        tiempoSinVer = 0f;
-
-        ElegirPuntoPatrullaMasCercano();
+        limiteRegreso = ahora + tiempoMaximoRegreso;
+        punto = PuntoMasCercano();
     }
 
-    private void Reaparecer()
+    private Transform PuntoMasCercano()
     {
-        transform.position = puntoReaparicion.position;
-
-        ElegirPuntoPatrullaMasCercano();
-
-        tiempoRegreso = 0f;
-        tiempoSinVer = 0f;
-        temporizadorObjetivo = 0f;
-
-        estado = Estado.Patrulla;
-    }
-
-    private void ElegirPuntoPatrullaMasCercano()
-    {
-        float distanciaA = Vector2.Distance(
-            transform.position,
-            puntoA.position
-        );
-
-        float distanciaB = Vector2.Distance(
-            transform.position,
-            puntoB.position
-        );
-
-        objetivoPatrulla = distanciaA < distanciaB
-            ? puntoA
-            : puntoB;
-    }
-
-    private void CambiarPuntoPatrulla()
-    {
-        objetivoPatrulla = objetivoPatrulla == puntoA
-            ? puntoB
-            : puntoA;
-    }
-
-    private bool EstaALaAlturaDelPunto(Transform punto)
-    {
-        return Mathf.Abs(
-            transform.position.y - punto.position.y
-        ) <= toleranciaVertical;
-    }
-
-    private bool HaLlegadoAlPunto(Transform punto)
-    {
-        bool cercaEnX = Mathf.Abs(
-            transform.position.x - punto.position.x
-        ) <= toleranciaHorizontal;
-
-        return cercaEnX && EstaALaAlturaDelPunto(punto);
+        Vector2 posicion = cuerpo.position;
+        return ((Vector2)puntoA.position - posicion).sqrMagnitude <
+               ((Vector2)puntoB.position - posicion).sqrMagnitude ? puntoA : puntoB;
     }
 
     private void MoverHacia(float destino, float velocidad)
     {
-        float diferencia = destino - transform.position.x;
-
-        if (Mathf.Abs(diferencia) > 0.01f)
-        {
-            direccionMovimiento = Mathf.Sign(diferencia);
-            sr.flipX = diferencia < 0f;
-        }
-
-        Vector3 posicionDestino = new Vector3(
-            destino,
-            transform.position.y,
-            transform.position.z
-        );
-
-        transform.position = Vector3.MoveTowards(
-            transform.position,
-            posicionDestino,
-            velocidad * Time.deltaTime
-        );
+        float x = cuerpo.position.x;
+        float paso = Mathf.MoveTowards(x, destino, velocidad * Time.fixedDeltaTime) - x;
+        cuerpo.linearVelocityX = paso / Time.fixedDeltaTime;
+        if (Mathf.Abs(paso) > 0.0001f) sprite.flipX = paso < 0f;
+        vida.Animacion?.Mover(Mathf.Abs(x - xAnterior) > 0.0001f);
+        xAnterior = x;
     }
 
-    private IEnumerator Atacar()
+    private Vector2 OrigenVision => puntoVision ? puntoVision.position : transform.position;
+
+    private bool VeJugador()
     {
-        atacando = true;
-
-        yield return new WaitForSeconds(0.5f);
-
-        atacando = false;
-    }
-
-    private bool PuedeVerJugador()
-    {
-        if (jugador == null)
-            return false;
-
-        Vector2 origen = puntoVision != null
-            ? (Vector2)puntoVision.position
-            : (Vector2)transform.position;
-
-        Vector2 direccion = (Vector2)jugador.position - origen;
-
-        if (direccion.magnitude > radioVision)
-            return false;
-
-        RaycastHit2D hit = Physics2D.Linecast(
-            origen,
-            jugador.position,
-            paredLayer
-        );
-
-        return hit.collider == null;
+        if (!jugador) return false;
+        Vector2 origen = OrigenVision;
+        Vector2 destino = jugador.position;
+        return (destino - origen).sqrMagnitude <= radioVision * radioVision &&
+               !Physics2D.Linecast(origen, destino, paredLayer).collider;
     }
 
     private void OnDrawGizmosSelected()
     {
-        Vector3 origen = puntoVision != null
-            ? puntoVision.position
-            : transform.position;
-
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(origen, radioVision);
-
-        if (puntoA != null && puntoB != null)
-        {
-            Gizmos.color = Color.green;
-            Gizmos.DrawLine(puntoA.position, puntoB.position);
-        }
-
-        if (puntoReaparicion != null)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(
-                puntoReaparicion.position,
-                0.25f
-            );
-        }
+        Gizmos.DrawWireSphere(OrigenVision, radioVision);
+        Gizmos.color = Color.green;
+        if (puntoA && puntoB) Gizmos.DrawLine(puntoA.position, puntoB.position);
+        Gizmos.color = Color.red;
+        if (puntoReaparicion) Gizmos.DrawWireSphere(puntoReaparicion.position, 0.25f);
     }
 }

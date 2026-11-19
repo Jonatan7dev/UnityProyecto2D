@@ -3,24 +3,17 @@ using UnityEngine;
 [RequireComponent(typeof(EnemyState))]
 public class EnemyAttack : MonoBehaviour
 {
-    [Header("Ataque por contacto")]
     public int danoContacto = 20;
+    private EnemyState estado;
 
-    private EnemyState state;
+    private void Awake() => estado = GetComponent<EnemyState>();
 
-    private void Awake()
+    private void OnCollisionEnter2D(Collision2D choque)
     {
-        state = GetComponent<EnemyState>();
-    }
+        if (estado.EstaMuerto || !choque.gameObject.CompareTag("Player")) return;
+        if (!choque.gameObject.TryGetComponent(out PlayerState jugador) || jugador.EstaMuerto) return;
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (state.EstaMuerto || !collision.gameObject.CompareTag("Player")) return;
-
-        PlayerState playerState = collision.gameObject.GetComponent<PlayerState>();
-        if (playerState != null)
-        {
-            playerState.Vida(danoContacto);
-        }
+        estado.Animacion?.Reproducir(EstadoEnemy.ATTACK);
+        jugador.Vida(danoContacto);
     }
 }

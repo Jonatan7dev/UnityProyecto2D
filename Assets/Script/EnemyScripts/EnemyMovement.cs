@@ -1,4 +1,6 @@
+
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(SpriteRenderer), typeof(EnemyState))]
 public class EnemyMovement : MonoBehaviour
@@ -33,11 +35,15 @@ public class EnemyMovement : MonoBehaviour
     public Transform puntoVision;
     public LayerMask paredLayer;
 
+    [Header("Ataque")]
+    private bool atacando;
+
     private Transform jugador;
     private Transform objetivoPatrulla;
 
     private SpriteRenderer sr;
     private EnemyState state;
+    private EnemyAnimation anim;
 
     private Estado estado = Estado.Patrulla;
 
@@ -46,10 +52,13 @@ public class EnemyMovement : MonoBehaviour
     private float tiempoRegreso;
     private float objetivoJugador;
 
+    private float direccionMovimiento;
+
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
         state = GetComponent<EnemyState>();
+        anim = GetComponent<EnemyAnimation>();
     }
 
     private void Start()
@@ -100,9 +109,13 @@ public class EnemyMovement : MonoBehaviour
                 IniciarRegreso();
         }
 
+        // Reiniciamos la dirección antes de calcular el movimiento.
+        direccionMovimiento = 0f;
+
         switch (estado)
         {
             case Estado.Patrulla:
+
                 MoverHacia(
                     objetivoPatrulla.position.x,
                     velocidadPatrulla
@@ -114,14 +127,13 @@ public class EnemyMovement : MonoBehaviour
                 }
                 else if (!EstaALaAlturaDelPunto(objetivoPatrulla))
                 {
-                    // Si ha caído durante la patrulla,
-                    // también intentará regresar.
                     IniciarRegreso();
                 }
 
                 break;
 
             case Estado.Persecucion:
+
                 temporizadorObjetivo += Time.deltaTime;
 
                 if (veJugador &&
@@ -131,8 +143,6 @@ public class EnemyMovement : MonoBehaviour
                     temporizadorObjetivo = 0f;
                 }
 
-                // Si deja de verlo, se dirige a la última
-                // posición conocida durante el tiempo de espera.
                 MoverHacia(
                     objetivoJugador,
                     velocidadPersecucion
@@ -141,6 +151,7 @@ public class EnemyMovement : MonoBehaviour
                 break;
 
             case Estado.Regreso:
+
                 tiempoRegreso += Time.deltaTime;
 
                 MoverHacia(
@@ -148,7 +159,6 @@ public class EnemyMovement : MonoBehaviour
                     velocidadPatrulla
                 );
 
-                // Coincidir solo en X no significa haber regresado.
                 if (HaLlegadoAlPunto(objetivoPatrulla))
                 {
                     CambiarPuntoPatrulla();
@@ -163,6 +173,9 @@ public class EnemyMovement : MonoBehaviour
 
                 break;
         }
+
+        // Actualizamos la animación en cada frame.
+        anim.ActualizarAnimacion(direccionMovimiento, atacando);
     }
 
     private void IniciarRegreso()
@@ -232,7 +245,10 @@ public class EnemyMovement : MonoBehaviour
         float diferencia = destino - transform.position.x;
 
         if (Mathf.Abs(diferencia) > 0.01f)
+        {
+            direccionMovimiento = Mathf.Sign(diferencia);
             sr.flipX = diferencia < 0f;
+        }
 
         Vector3 posicionDestino = new Vector3(
             destino,
@@ -245,6 +261,15 @@ public class EnemyMovement : MonoBehaviour
             posicionDestino,
             velocidad * Time.deltaTime
         );
+    }
+
+    private IEnumerator Atacar()
+    {
+        atacando = true;
+
+        yield return new WaitForSeconds(0.5f);
+
+        atacando = false;
     }
 
     private bool PuedeVerJugador()

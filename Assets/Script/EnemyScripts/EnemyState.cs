@@ -3,13 +3,17 @@ using UnityEngine.UI;
 
 public class EnemyState : MonoBehaviour
 {
-    [Header("Vida")]
     public int hp = 30;
-
-    [Header("UI")]
     public Text texto;
-
     public bool EstaMuerto { get; private set; }
+    public EnemyAnimation Animacion { get; private set; }
+
+    private void Awake()
+    {
+        Animacion = GetComponent<EnemyAnimation>();
+        if (!Animacion && TryGetComponent<Animator>(out _))
+            Animacion = gameObject.AddComponent<EnemyAnimation>();
+    }
 
     private void Start()
     {
@@ -20,23 +24,22 @@ public class EnemyState : MonoBehaviour
     public void TakeHp(int dmg)
     {
         if (EstaMuerto || dmg <= 0) return;
-
         hp = Mathf.Max(0, hp - dmg);
         MostrarTexto();
-
-        if (hp <= 0) Morir();
+        if (hp == 0) Morir();
+        else Animacion?.Reproducir(EstadoEnemy.HIT);
     }
 
     public void MostrarTexto()
     {
-        if (texto != null) texto.text = "Hp: " + hp;
+        if (texto) texto.text = "Hp: " + hp;
     }
 
     private void Morir()
     {
         if (EstaMuerto) return;
-
         EstaMuerto = true;
-        Destroy(gameObject);
+        if (TryGetComponent(out Rigidbody2D cuerpo)) cuerpo.simulated = false;
+        Destroy(gameObject, Animacion?.Reproducir(EstadoEnemy.DIE) ?? 0f);
     }
 }

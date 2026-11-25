@@ -482,7 +482,7 @@ TextureImporter:
         width: 41
         height: 138
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -491,6 +491,72 @@ TextureImporter:
       bones: []
       spriteID: 2268a3624f40915468375ab333c2ea2c
       internalID: -219385213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas pixel art de castillo medieval_18
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 583
+        width: 140
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7e6cee5dfbc9b4bab8131e1f2b2d2c
+      internalID: -2025128388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas pixel art de castillo medieval_19
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 583
+        width: 138
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3dd45f5b04d4d84ca66dede15edfb32
+      internalID: 716147748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas pixel art de castillo medieval_20
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 583
+        width: 137
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf328f57971dc947822bccb12849821
+      internalID: 2021805359
       vertices: []
       indices: 
       edges: []
@@ -519,7 +585,10 @@ TextureImporter:
       Atlas pixel art de castillo medieval_15: 1693075928
       Atlas pixel art de castillo medieval_16: 1460487264
       Atlas pixel art de castillo medieval_17: -219385213
+      Atlas pixel art de castillo medieval_18: -2025128388
+      Atlas pixel art de castillo medieval_19: 716147748
       Atlas pixel art de castillo medieval_2: 2188205
+      Atlas pixel art de castillo medieval_20: 2021805359
       Atlas pixel art de castillo medieval_3: -1971249455
       Atlas pixel art de castillo medieval_4: -765882716
       Atlas pixel art de castillo medieval_5: 1367437482

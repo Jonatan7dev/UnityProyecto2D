@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 24618604d0e644c4a92589f96b27b056
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -119088665293446588
+    second: "Coraz\xF3n, espada y escudo luminosos-1_0"
+  - first:
+      213: -5731900233820188735
+    second: "Coraz\xF3n, espada y escudo luminosos-1_1"
+  - first:
+      213: -4108465664083385464
+    second: "Coraz\xF3n, espada y escudo luminosos-1_2"
+  - first:
+      213: 2028931857357096320
+    second: "Coraz\xF3n, espada y escudo luminosos-1_3"
+  - first:
+      213: 2912546198518508153
+    second: "Coraz\xF3n, espada y escudo luminosos-1_4"
+  - first:
+      213: 496873457245682958
+    second: "Coraz\xF3n, espada y escudo luminosos-1_5"
+  - first:
+      213: 7355303360577459820
+    second: "Coraz\xF3n, espada y escudo luminosos-1_6"
+  - first:
+      213: 1259504963225189358
+    second: "Coraz\xF3n, espada y escudo luminosos-1_7"
+  - first:
+      213: 9010542666366857310
+    second: "Coraz\xF3n, espada y escudo luminosos-1_8"
+  - first:
+      213: -4321642314988655788
+    second: "Coraz\xF3n, espada y escudo luminosos-1_9"
+  - first:
+      213: 1994022159971101514
+    second: "Coraz\xF3n, espada y escudo luminosos-1_10"
+  - first:
+      213: -878255395549999353
+    second: "Coraz\xF3n, espada y escudo luminosos-1_11"
+  - first:
+      213: 6598263687969171527
+    second: "Coraz\xF3n, espada y escudo luminosos-1_12"
+  - first:
+      213: 9036988103281446080
+    second: "Coraz\xF3n, espada y escudo luminosos-1_13"
+  - first:
+      213: 5878713259747309769
+    second: "Coraz\xF3n, espada y escudo luminosos-1_14"
+  - first:
+      213: 7690019824379253728
+    second: "Coraz\xF3n, espada y escudo luminosos-1_15"
+  - first:
+      213: -1827826344567518439
+    second: "Coraz\xF3n, espada y escudo luminosos-1_16"
+  - first:
+      213: 6942095384127262026
+    second: "Coraz\xF3n, espada y escudo luminosos-1_17"
+  - first:
+      213: -6845001422733219108
+    second: "Coraz\xF3n, espada y escudo luminosos-1_18"
+  - first:
+      213: 6488411640473699031
+    second: "Coraz\xF3n, espada y escudo luminosos-1_19"
+  - first:
+      213: -3426325754055432140
+    second: "Coraz\xF3n, espada y escudo luminosos-1_20"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 350
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Coraz\xF3n, espada y escudo luminosos-1_2"
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 16
+        width: 386
+        height: 693
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883ab600f3ccbf6c0800000000000000
+      internalID: -4108465664083385464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Coraz\xF3n, espada y escudo luminosos-1_3"
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 98
+        width: 548
+        height: 505
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0854e3746c6382c10800000000000000
+      internalID: 2028931857357096320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Coraz\xF3n, espada y escudo luminosos-1_7"
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 58
+        width: 542
+        height: 616
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebf0e54719aa7110800000000000000
+      internalID: 1259504963225189358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a787c7d64c5205a499db9d05cc75d016
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Coraz\xF3n, espada y escudo luminosos-1_0": -119088665293446588
+      "Coraz\xF3n, espada y escudo luminosos-1_1": -5731900233820188735
+      "Coraz\xF3n, espada y escudo luminosos-1_10": 1994022159971101514
+      "Coraz\xF3n, espada y escudo luminosos-1_11": -878255395549999353
+      "Coraz\xF3n, espada y escudo luminosos-1_12": 6598263687969171527
+      "Coraz\xF3n, espada y escudo luminosos-1_13": 9036988103281446080
+      "Coraz\xF3n, espada y escudo luminosos-1_14": 5878713259747309769
+      "Coraz\xF3n, espada y escudo luminosos-1_15": 7690019824379253728
+      "Coraz\xF3n, espada y escudo luminosos-1_16": -1827826344567518439
+      "Coraz\xF3n, espada y escudo luminosos-1_17": 6942095384127262026
+      "Coraz\xF3n, espada y escudo luminosos-1_18": -6845001422733219108
+      "Coraz\xF3n, espada y escudo luminosos-1_19": 6488411640473699031
+      "Coraz\xF3n, espada y escudo luminosos-1_2": -4108465664083385464
+      "Coraz\xF3n, espada y escudo luminosos-1_20": -3426325754055432140
+      "Coraz\xF3n, espada y escudo luminosos-1_3": 2028931857357096320
+      "Coraz\xF3n, espada y escudo luminosos-1_4": 2912546198518508153
+      "Coraz\xF3n, espada y escudo luminosos-1_5": 496873457245682958
+      "Coraz\xF3n, espada y escudo luminosos-1_6": 7355303360577459820
+      "Coraz\xF3n, espada y escudo luminosos-1_7": 1259504963225189358
+      "Coraz\xF3n, espada y escudo luminosos-1_8": 9010542666366857310
+      "Coraz\xF3n, espada y escudo luminosos-1_9": -4321642314988655788
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
